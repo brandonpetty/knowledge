@@ -6,12 +6,12 @@
 
 *Use a simple naming convention to match domain or subdomain.*
 
-1; Create Bucket
+1. Create Bucket
     - Bucket name: sub.domain.tld
     - Region: {varies}
     - Uncheck Block all public access and acknowledge that the current settings will provide public access to this bucket.
 
-2; Configure Public Access To Bucket
+2. Configure Public Access To Bucket
     - Click on bucket name and navigate to permissions.
     - Scroll down and edit the Bucket policy - then save changes.
 
@@ -57,7 +57,7 @@
 }
 ```
 
-3; Setup Static Website Hosting
+3. Setup Static Website Hosting
     - Click on bucket name and navigate to properties.
     - Scroll down and edit the Static website hosting settings.
         - Static website hosting: Enable
@@ -68,10 +68,10 @@
 
 ## Setup Remote Access to S3 Bucket
 
-1; Open IAM in Amazon Web Services Dashboard.
-2; On the right, locate Quick Links > My access key
-3; Create New Access Key if needed. Download a copy if needed.
-4; Configure desired application for access:
+1. Open IAM in Amazon Web Services Dashboard.
+2. On the right, locate Quick Links > My access key
+3. Create New Access Key if needed. Download a copy if needed.
+4. Configure desired application for access:
 
 > Protocol: S3  
 > Server: s3.amazonaws.com  
