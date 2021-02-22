@@ -73,9 +73,9 @@
 3. Create New Access Key if needed. Download a copy if needed.
 4. Configure desired application for access:
 
-> Protocol: S3
-> Server: s3.amazonaws.com
-> Access Key ID: `ACCESS_KEY_ID`
-> Secret: `SECRET`
+> Protocol: S3  
+> Server: s3.amazonaws.com  
+> Access Key ID: `ACCESS_KEY_ID`  
+> Secret: `SECRET`  
 
 You can create a new IAM user if needed to restrict access to each S3 bucket on your account if needed.
