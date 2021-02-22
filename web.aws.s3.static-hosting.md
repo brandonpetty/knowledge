@@ -68,10 +68,10 @@
 
 ## Setup Remote Access to S3 Bucket
 
-1. Open IAM in Amazon Web Services Dashboard.
-2. On the right, locate Quick Links > My access key
-3. Create New Access Key if needed. Download a copy if needed.
-4. Configure desired application for access:
+1; Open IAM in Amazon Web Services Dashboard.
+2; On the right, locate Quick Links > My access key
+3; Create New Access Key if needed. Download a copy if needed.
+4; Configure desired application for access:
 
 > Protocol: S3  
 > Server: s3.amazonaws.com  

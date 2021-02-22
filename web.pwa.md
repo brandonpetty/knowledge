@@ -28,7 +28,6 @@ self.addEventListener("install", e=>{
     })
   );
 });
-
 ```
 
 Then add two event listeners:
@@ -58,7 +57,6 @@ self.addEventListener('activate', event => {
     })
   );
 });
-
 ```
 
 ## Check If Functionality Is Supported
