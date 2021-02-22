@@ -1,20 +1,22 @@
 # Setup Static Content Hosting On Amazon S3
 
-https://s3.console.aws.amazon.com/s3/home?region=us-east-2
+[aws.amazon.com](https://s3.console.aws.amazon.com/s3/home)
 
-### Setting Up S3 Bucket
+## Setting Up S3 Bucket
 
 *Use a simple naming convention to match domain or subdomain.*
 
-1. Create Bucket
+1; Create Bucket
     - Bucket name: sub.domain.tld
     - Region: {varies}
     - Uncheck Block all public access and acknowledge that the current settings will provide public access to this bucket.
 
-2. Configure Public Access To Bucket
+2; Configure Public Access To Bucket
     - Click on bucket name and navigate to permissions.
     - Scroll down and edit the Bucket policy.
-    `{
+
+    ```json
+    {
       "Version": "2012-10-17",
       "Statement": [
         {
@@ -52,10 +54,12 @@ https://s3.console.aws.amazon.com/s3/home?region=us-east-2
           }
         }
       ]
-    }`
+    }
+  ```
+
     - Save changes.
 
-3. Setup Static Website Hosting
+3; Setup Static Website Hosting
     - Click on bucket name and navigate to properties.
     - Scroll down and edit the Static website hosting settings.
         - Static website hosting: Enable
@@ -64,7 +68,7 @@ https://s3.console.aws.amazon.com/s3/home?region=us-east-2
     - Save changes.
     - Access on the S3 Dashboard should now read Public.
 
-### Setup Remote Access to S3 Bucket
+## Setup Remote Access to S3 Bucket
 
 1. Open IAM in Amazon Web Services Dashboard.
 2. On the right, locate Quick Links > My access key
@@ -72,11 +76,8 @@ https://s3.console.aws.amazon.com/s3/home?region=us-east-2
 4. Configure desired application for access:
 
 > Protocol: S3
-> 
 > Server: s3.amazonaws.com
-> 
 > Access Key ID: `ACCESS_KEY_ID`
-> 
 > Secret: `SECRET`
 
 You can create a new IAM user if needed to restrict access to each S3 bucket on your account if needed.

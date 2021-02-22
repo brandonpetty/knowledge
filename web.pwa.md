@@ -1,10 +1,11 @@
 # Convert Web App Into Installable Progressive Web App (PWA)
 
-https://dev.to/zippytyro/how-to-convert-any-website-webpage-into-an-installable-progressive-web-app-pwa-59ai
+[dev.to](https://dev.to/zippytyro/how-to-convert-any-website-webpage-into-an-installable-progressive-web-app-pwa-59ai
+)
 
 A progressive web app (PWA) is the set of mobile web application development techniques that entails building apps that feel and look like native ones. Using a web stack (JS, HTML, and CSS), progressive web apps combine rich functionality and a smooth user experience associated with native apps. Simply put, PWA is the web app with the native-app flavor: After the installation, a user clicks on its icon on a device's home screen and gets straight to the website.
- 
-### Create A Service Worker File
+
+## Create A Service Worker File
 
 Create a `service-worker.js` file in the root directory of the project so that static content can be stored in cache storage.
 
@@ -60,7 +61,7 @@ self.addEventListener('activate', event => {
 
 ```
 
-### Check If Functionality Is Supported
+## Check If Functionality Is Supported
 
 For static websites, update the main HTML document to check for the availability of service workers and then register the application using the `service-worker.js` file from the previous step.
 
@@ -111,11 +112,10 @@ This file contains important metadata about the applcation such as app name, ico
 }
 ```
 
-### Dev Tools Debugging
+## Dev Tools Debugging
 
 Inside of Chrome Dev Tools click on the application tab and check if the service worker and manifest files are detected by the browser.
 
 You can also verify that your application meets the standard for PWA inside of the lighthouse tab.
 
 Application options should now be visible when visiting the application (based upon the browser or device).
-
