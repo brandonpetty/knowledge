@@ -15,8 +15,8 @@ const CACHE_NAME  = 'APPLICATION_NAME';
 // add relative url to static content for offline cache storage
 let resourcesToCache = [
   "./",
-  "./img/game.png",
-  "./game.js",
+  "./img/logo.png",
+  "./app.js",
   "./styles.css"
 ];
 
