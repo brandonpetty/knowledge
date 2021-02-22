@@ -1,6 +1,6 @@
 # Configure Cloudflare for DNS
 
-[https://dash.cloudflare.com/](dash.cloudflare.com)
+[dash.cloudflare.com](https://dash.cloudflare.com/)
 
 ## DNS Records
 
