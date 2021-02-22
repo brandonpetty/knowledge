@@ -86,7 +86,7 @@ Create a `manifest.json` file that is linked to in the main HTML document.
 
 This file contains important metadata about the applcation such as app name, icons, start url, etc. Here you can specify a single icon OR multiple icons for use with different screen sizes.
 
-```json
+```yaml
 {
   "name": "APPLICATION NAME",
   "short_name": "SHORT APPLICATION NAME",

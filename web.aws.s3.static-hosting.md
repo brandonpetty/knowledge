@@ -15,7 +15,7 @@
     - Click on bucket name and navigate to permissions.
     - Scroll down and edit the Bucket policy.
 
-    ```json
+     ```yaml
     {
       "Version": "2012-10-17",
       "Statement": [
@@ -56,8 +56,7 @@
       ]
     }
   ```
-
-    - Save changes.
+      - Save changes.
 
 3; Setup Static Website Hosting
     - Click on bucket name and navigate to properties.
